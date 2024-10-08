@@ -15,7 +15,7 @@ const createUsersTable = async () => {
   } catch (err) {
     console.error("Erro ao criar tabela:", err);
   } finally {
-    client.release();
+    client.release();g
   }
 };
 
