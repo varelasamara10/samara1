@@ -1,5 +1,5 @@
-import { Request, Response } from 'express';
-import { UserService } from '../services/userService';
+import { Request, Response } from "express";
+import { UserService } from "../services/userService";
 
 const userService = new UserService();
 
@@ -9,7 +9,7 @@ export const getUsers = async (req: Request, res: Response) => {
     res.status(200).json(users);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Erro ao buscar usuários' });
+    res.status(500).json({ error: "Erro ao buscar usuários" });
   }
 };
 
